@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        /* Optional: visual indicator for clickable area */
+        /* 
+        .top-third {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 33.333vh;
+            background: rgba(0,0,0,0.05);
+            pointer-events: none;
+        }
+        */
+    </style>
+</head>
+<body>
+    <img src="images/canteens.jpg" alt="Canteen Menu">
+    <script>
+        document.body.addEventListener('click', function(e) {
+            // Get click Y position relative to viewport
+            const y = e.clientY;
+            const oneThird = window.innerHeight / 3;
+            if (y <= oneThird) {
+                // Redirect to the new HTML page
+                window.location.href = "canteenstores.html";
+            }
+        });
+    </script>
+</body>
+</html>
