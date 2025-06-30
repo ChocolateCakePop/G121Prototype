@@ -1,8 +1,14 @@
-/* Create a file: c:\Website\styles.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-y: auto;         /* Allow full-page scrolling */
+  padding-top: 4.5em;       /* Push content below fixed header */
+  box-sizing: border-box;
+}
+
+.icons-scroll-container {
+  padding-bottom: 4em;      /* Optional: space below last row of apps */
 }
 
 .container {
