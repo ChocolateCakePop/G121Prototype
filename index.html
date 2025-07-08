@@ -22,8 +22,10 @@
   <div class="apps-grid">
     <!-- 7 rows, 3 columns per row, last row has 2 items (App 20, App 21), then RPNav below -->
     <div class="app-item">
-      <button class="app-icon">1</button>
-      <span class="app-label">App 1</span>
+      <a href="rpnav.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: center;">
+      <button class="app-icon">RP</button>
+      <span class="app-label">RPNav</span>
+      </a>
     </div>
     <div class="app-item">
       <button class="app-icon">2</button>
@@ -105,18 +107,6 @@
       <button class="app-icon">21</button>
       <span class="app-label">App 21</span>
     </div>
-    <!-- RPNav icon with link to a new page, now in left column of new row -->
-    <div class="app-item" style="grid-column: 1 / 2;">
-      <a href="rpnav.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: center;">
-        <button class="app-icon">RP</button>
-        <span class="app-label">RPNav</span>
-      </a>
-    </div>
-    <!-- Optionally, add two empty items to fill the row -->
-    <div class="app-item" style="visibility: hidden;"></div>
-    <div class="app-item" style="visibility: hidden;"></div>
-  </div>
-</div>
 
 <style>
   html, body {
